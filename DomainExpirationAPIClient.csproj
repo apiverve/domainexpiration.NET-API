@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>APIVerve.API.DomainExpiration</Title>
+    <Version>1.0.0</Version>
+    <Authors>APIVerve</Authors>
+    <Company>APIVerve</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://apiverve.com/marketplace/api/domainexpiration</PackageProjectUrl>
+    <SignAssembly>False</SignAssembly>
+    <Description>Domain Expiration Checker is a simple tool for checking the expiration date and age of a domain. It returns the expiration date and age of the domain provided.</Description>
+    <RepositoryUrl>https://github.com/apiverve/domainexpiration-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>domain expiration checker; domain expiration checker api; domain expiration checker tool; domain expiration checker software; domain expiration checker service; domain expiration checker library; domain expiration checker sdk; domain expiration checker code; domain expiration checker script; domain expiration checker program; domain expiration checker application; domain expiration checker app; domain expiration checker utility; domain expiration checker helper; domain expiration checker helper tool; domain expiration checker helper software; domain expiration checker helper service; domain expiration checker helper library; domain expiration checker helper sdk; domain expiration checker helper code; domain expiration checker helper script; domain expiration checker helper program; domain expiration checker helper application; domain expiration checker helper app; domain expiration checker helper utility; domain expiration checker helper</PackageTags>
+    <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
