@@ -82,7 +82,7 @@ var response = apiClient.Execute(queryOptions);
 if(response.error != null) {
 	Console.WriteLine(response.error);
 } else {
-    var jsonResponse = JsonConvert.SerializeObject(response.data, Newtonsoft.Json.Formatting.Indented);
+    var jsonResponse = JsonConvert.SerializeObject(response, Newtonsoft.Json.Formatting.Indented);
     Console.WriteLine(jsonResponse);
 }
 ```
@@ -96,11 +96,11 @@ if(response.error != null) {
   "data": {
     "domain": "myspace.com",
     "expirationDate": "2029-02-23T05:00:00Z",
-    "daysToExpiration": 1746,
+    "daysToExpiration": 1744,
     "createdDate": "1996-02-22T05:00:00Z",
     "lastUpdatedDate": "2023-01-17T00:16:21Z",
-    "daysSinceLastUpdate": 482,
-    "domainAgeDays": 10308
+    "daysSinceLastUpdate": 484,
+    "domainAgeDays": 10310
   }
 }
 ```
