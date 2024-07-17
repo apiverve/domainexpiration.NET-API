@@ -6,26 +6,26 @@ namespace APIVerve
 {
 public class data
 {
-    [JsonProperty("domain")]
-    public string domain { get; set; }
-
-    [JsonProperty("expirationDate")]
-    public DateTime expirationDate { get; set; }
-
-    [JsonProperty("daysToExpiration")]
-    public int daysToExpiration { get; set; }
-
     [JsonProperty("createdDate")]
     public DateTime createdDate { get; set; }
-
-    [JsonProperty("lastUpdatedDate")]
-    public DateTime lastUpdatedDate { get; set; }
 
     [JsonProperty("daysSinceLastUpdate")]
     public int daysSinceLastUpdate { get; set; }
 
+    [JsonProperty("daysToExpiration")]
+    public int daysToExpiration { get; set; }
+
+    [JsonProperty("domain")]
+    public string domain { get; set; }
+
     [JsonProperty("domainAgeDays")]
     public int domainAgeDays { get; set; }
+
+    [JsonProperty("expirationDate")]
+    public DateTime expirationDate { get; set; }
+
+    [JsonProperty("lastUpdatedDate")]
+    public DateTime lastUpdatedDate { get; set; }
 
 }
 
