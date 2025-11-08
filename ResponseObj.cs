@@ -4,45 +4,46 @@ using Newtonsoft.Json;
 
 namespace APIVerve
 {
-public class data
-{
-    [JsonProperty("domain")]
-    public string domain { get; set; }
+    /// <summary>
+    /// Data data
+    /// </summary>
+    public class Data
+    {
+        [JsonProperty("domain")]
+        public string Domain { get; set; }
 
-    [JsonProperty("expirationDate")]
-    public DateTime expirationDate { get; set; }
+        [JsonProperty("expirationDate")]
+        public string ExpirationDate { get; set; }
 
-    [JsonProperty("daysToExpiration")]
-    public int daysToExpiration { get; set; }
+        [JsonProperty("daysToExpiration")]
+        public int DaysToExpiration { get; set; }
 
-    [JsonProperty("createdDate")]
-    public DateTime createdDate { get; set; }
+        [JsonProperty("createdDate")]
+        public string CreatedDate { get; set; }
 
-    [JsonProperty("lastUpdatedDate")]
-    public DateTime lastUpdatedDate { get; set; }
+        [JsonProperty("lastUpdatedDate")]
+        public string LastUpdatedDate { get; set; }
 
-    [JsonProperty("daysSinceLastUpdate")]
-    public int daysSinceLastUpdate { get; set; }
+        [JsonProperty("daysSinceLastUpdate")]
+        public int DaysSinceLastUpdate { get; set; }
 
-    [JsonProperty("domainAgeDays")]
-    public int domainAgeDays { get; set; }
+        [JsonProperty("domainAgeDays")]
+        public int DomainAgeDays { get; set; }
 
-}
+    }
+    /// <summary>
+    /// API Response object
+    /// </summary>
+    public class ResponseObj
+    {
+        [JsonProperty("status")]
+        public string Status { get; set; }
 
-public class ResponseObj
-{
-    [JsonProperty("status")]
-    public string status { get; set; }
+        [JsonProperty("error")]
+        public object Error { get; set; }
 
-    [JsonProperty("error")]
-    public object error { get; set; }
+        [JsonProperty("data")]
+        public Data Data { get; set; }
 
-    [JsonProperty("data")]
-    public data data { get; set; }
-
-    [JsonProperty("code")]
-    public int code { get; set; }
-
-}
-
+    }
 }
